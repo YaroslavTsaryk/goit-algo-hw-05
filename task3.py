@@ -153,9 +153,10 @@ if __name__ == '__main__':
     str2="Робинсон"
     
     
-    print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
+    #print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
     print(f"|{'file':7}|{'substr':6}|{'method':20}|{'time':24}|")
     print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
+    print(f"|{'True search':^60}|")
     
     execution_time = timeit.timeit(lambda: kmp_search(data1,str1), number=1)
     print(f"| data1 | str1 | kmp_search         | {execution_time:22} |")
@@ -179,7 +180,7 @@ if __name__ == '__main__':
     #print(boyer_moore_search(data2,str2))
     
     #print("CROSS")
-    print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
+    print(f"|{'False search':^60}|")
     
     execution_time = timeit.timeit(lambda: kmp_search(data1,str2), number=1)
     print(f"| data1 | str2 | kmp_search         | {execution_time:22} |")
@@ -199,7 +200,7 @@ if __name__ == '__main__':
     execution_time = timeit.timeit(lambda: rabin_karp_search(data2,str1), number=1)
     print(f"| data2 | str1 | rabin_karp_search  | {execution_time:22} |")
     
-    print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
+    #print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
     
     #print(rabin_karp_search(data1,str2))
     #print(rabin_karp_search(data2,str1))

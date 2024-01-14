@@ -9,16 +9,17 @@ kmp_search і rabin_karp_search мають час виконаня 0.01 і 0.02 
 
 |file   |substr|method              |time                    |
 |-------|------|--------------------|------------------------|
-| data1 | str1 | kmp_search         |   0.010317399981431663 |
-| data2 | str2 | kmp_search         |   0.008802800002740696 |
-| data1 | str1 | boyer_moore_search |  0.0014466999855358154 |
-| data2 | str2 | boyer_moore_search |   0.005375999986426905 |
-| data1 | str1 | rabin_karp_search  |   0.014775799994822592 |
-| data2 | str2 | rabin_karp_search  |    0.02303599999868311 |
-|                False search                                |
-| data1 | str2 | kmp_search         |   0.007410799997160211 |
-| data2 | str1 | kmp_search         |   0.011130600003525615 |
-| data1 | str2 | boyer_moore_search |  0.0025061999913305044 |
-| data2 | str1 | boyer_moore_search |   0.002525099989725277 |
-| data1 | str2 | rabin_karp_search  |   0.010436900018248707 |
-| data2 | str1 | rabin_karp_search  |   0.019885399990016595 |
+|                        True search                         |
+| data1 | str1 | kmp_search         |   0.011530800024047494 |
+| data2 | str2 | kmp_search         |   0.011046500003430992 |
+| data1 | str1 | boyer_moore_search |  0.0021912999800406396 |
+| data2 | str2 | boyer_moore_search |   0.004331200005253777 |
+| data1 | str1 | rabin_karp_search  |   0.009207800001604483 |
+| data2 | str2 | rabin_karp_search  |   0.017453599983127788 |
+|                        False search                        |
+| data1 | str2 | kmp_search         |   0.006199600000400096 |
+| data2 | str1 | kmp_search         |   0.015102700010174885 |
+| data1 | str2 | boyer_moore_search |  0.0018103999900631607 |
+| data2 | str1 | boyer_moore_search |  0.0021775999921374023 |
+| data1 | str2 | rabin_karp_search  |   0.013114000001223758 |
+| data2 | str1 | rabin_karp_search  |   0.019168200000422075 |
