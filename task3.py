@@ -154,6 +154,8 @@ if __name__ == '__main__':
     
     
     print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
+    print(f"|{'file':7}|{'substr':6}|{'method':20}|{'time':24}|")
+    print(f"|{'-'*7}|{'-'*6}|{'-'*20}|{'-'*24}|")
     
     execution_time = timeit.timeit(lambda: kmp_search(data1,str1), number=1)
     print(f"| data1 | str1 | kmp_search         | {execution_time:22} |")
